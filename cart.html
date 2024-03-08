@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <meta name="description" content="this is an e-commerce project for making mahedi shop">
+    <link rel="stylesheet" href="style.css">
+<!-- font awsome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <!-- navbar starts  -->
+
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list"><a class="nav__link" href="index.html">Home</a></li>
+        
+       
+            <li class="nav__list"><a class="nav__link" href="registar.html">Register</a></li>
+        
+        
+            <li class="nav__list"><a class="nav__link" href="login.html">Login</a></li>
+        
+        
+            <li class="nav__list"><a class="nav__link" href="index.html">Logout</a></li>
+    
+        
+            <li class="nav__list"><a class="nav__link" href="contact.html">Contact</a></li>
+        
+        
+            <li class="nav__list"><a class="nav__link" href="profile.html">
+                <img class="profile-icon" src="/Image/rsz_mahedi.jpg" alt="profile image">
+            </a></li>
+        </ul>
+
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list"><a href="index.html" class=" nav__brand nav__link">
+               Mahedi Shop 
+            </a></li>
+            <li class="nav__list"><a href="cart.html" class="nav__link">
+                <span><i class=" fa-solid fa-cart-shopping"></i></span>
+                cart 2 product - $250.00
+             </a></li>
+        </ul>
+    </nav>
+
+        <!-- navbar ends  -->
+
+        <main> 
+            <div class="cart flex-center">
+                <div class="cart__items">
+                    <div class="cart__items-heading card">
+                        <h2>Shopping cart [1 items]</h2>
+                        <div class="cart__items-action">
+                            <label for="select">
+                                <input type="checkbox" name="select" id="select">
+                            Select all items
+                            </label>
+                            <button class="btn">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn">
+                                Shop More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart__item card flex-space-around">
+                        <input type="checkbox" name="" id="">
+                        <img src="/Image/product-bag.jpg" alt="bag" class="cart__item-img">
+                   <div class="cart__item-description">
+                    <h3 class="product__name"> Jute Shopping bag</h3>
+                   <h4 class="product__price">Price: $500</h4>
+                   <p class="cart__item-shipping">Free Shipping</p>
+                </div>
+                <div class="cart__item-action">
+                    <button class="btn"><i class="fa fa-trash"></i></button>
+                <div>
+                    <button class="btn"><i class="fa fa-add"></i></button>
+                    <span>3</span>
+                    <button class="btn"><i class="fa fa-minus"></i></button>
+                
+                </div>
+                
+                </div>
+                
+                <div class="cart__payment card">
+                    <div class="cart__payment-summary">
+                        <h2>Payment Summary</h2>
+                        <div>
+                            <p>Subtotal: </p>
+                            <p>$1000.44</p>
+                        </div>
+                        <div>
+                            <p>Shipping Cost: </p>
+                            <p>$100.44</p>
+                        </div>
+                        <div>
+                            <p>Total cost: </p>
+                            <p>$1100.88</p>
+                        </div>
+                        <button class="btn cart__payment-btn">
+                            Pay now
+                        </button>
+                    </div></div>
+                    </div>
+                    <div class="cart__payment-method card">
+                        <h2>Payment Method</h2>
+                        <div>
+                            <i class="fa-brands fa-cc-visa fa 3x"></i>
+                            <i class="fa-brands fa-cc-apple-pay fa 3x"></i>
+                            <i class="fa-brands fa-cc-amex fa 3x"></i>
+                            <i class="fa-brands fa-cc-amazon-pay fa 3x"></i>
+                            <i class="fa-brands fa-cc-paypal fa 3x"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- footer starts here -->
+            <footer class="footer flex-space-around">
+                <div class="flex-space-around">
+                    <label for="subscribe"> Subscribe to Newsletter:</label>
+                <input type="email" id="subscribe" name="subscribe" 
+                placeholder="your email address" class="footer__input">
+                    <button class="btn btn-subscribe">subscribe</button>
+            </div>
+            <div>
+                <p>&copy; copyright 2024 mahedi shop. All right reserved</p>
+            </div>
+            </footer>
+
+        <!-- footer ends here -->
+
+
+        <script src="script/index.js"> </script>
+
+</body>
+</html>

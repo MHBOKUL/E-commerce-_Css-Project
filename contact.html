@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <meta name="description" content="this is an e-commerce project for making mahedi shop">
+    <link rel="stylesheet" href="style.css">
+<!-- font awsome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <!-- navbar starts  -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list"><a class="nav__link" href="index.html">Home</a></li>
+        
+       
+            <li class="nav__list"><a class="nav__link" href="registar.html">Register</a></li>
+        
+        
+            <li class="nav__list"><a class="nav__link" href="login.html">Login</a></li>
+        
+        
+            <li class="nav__list"><a class="nav__link" href="index.html">Logout</a></li>
+    
+        
+            <li class="nav__list"><a class="nav__link" href="contact.html">Contact</a></li>
+        
+        
+            <li class="nav__list"><a class="nav__link" href="profile.html">
+                <img class="profile-icon" src="/Image/rsz_mahedi.jpg" alt="profile image">
+            </a></li>
+        </ul>
+
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list"><a href="index.html" class=" nav__brand nav__link">
+               Mahedi Shop 
+            </a></li>
+            <li class="nav__list"><a href="cart.html" class="nav__link">
+                <span><i class=" fa-solid fa-cart-shopping"></i></span>
+                cart 2 product - $250.00
+             </a></li>
+        </ul>
+    </nav>
+
+        <!-- navbar ends  -->
+        <main> 
+            <section class="contact-section"></section>
+        <h2 class="section-title text-center">Contact Us</h2>
+        <div class="contact-container flex-center">
+            <form class="form card" action="">
+                <div class="form-control flex-center">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required autocomplete="name">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required autocomplete="email">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required autocomplete="password">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="message"> Message:</label>
+                <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="form-control flex-center form-btn-filed">
+                    <button type="submit" class="btn contact-btn">Submit</button>
+                </div>
+            </form>
+            <div class="contact-address flex-space-around">
+                <address>
+                    <h4>Address:</h4>
+                    <p>123, shibpur bazar</p>
+                    <p>Naogaon</p>
+                    <br>
+                    <span>Call:</span>
+                    <a href="tel:+8801642722023">01642722023</a>
+                </address>
+                <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746527.4526794753!2d90.34436470000001!3d23.506657000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1709872621249!5m2!1sen!2sbd"></iframe>
+            </div>
+    
+        </div>
+        </main>
+
+        <!-- footer starts here -->
+            <footer class="footer flex-space-around">
+                <div class="flex-space-around">
+                    <label for="subscribe"> Subscribe to Newsletter:</label>
+                <input type="email" id="subscribe" name="subscribe" 
+                placeholder="your email address" class="footer__input">
+                    <button class="btn btn-subscribe">subscribe</button>
+            </div>
+            <div>
+                <p>&copy; copyright 2024 mahedi shop. All right reserved</p>
+            </div>
+            </footer>
+
+        <!-- footer ends here -->
+
+
+        <script src="script/index.js"> </script>
+
+</body>
+</html>
